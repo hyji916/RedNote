@@ -6,7 +6,7 @@ A modern Boba Store Website built with React + TypeScript + Vite by team RedNote
 ✅ Styled with CSS for a smooth UI\
 ✅ Modular React Components\
 ❌ Boba Builder (WIP)\
-❌ Cart (WIP)\
+❌ Cart (WIP)
 
 📌 Prerequisites\
 Before running the project, ensure you have the correct Node.js and npm versions installed:\
