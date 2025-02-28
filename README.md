@@ -13,25 +13,25 @@ Before running the project, ensure you have the correct Node.js and npm versions
 
 Node.js: v22.14.0\
 npm: v10.9.2\
-To check your installed versions:\
+To check your installed versions:
 ```bash
 node -v
 npm -v
 ```
 
 💻 Installation\
-1️⃣ Clone the repository\
+1️⃣ Clone the repository
 ```bash
 git clone https://github.com/hyji916/RedNote.git
 cd RedNote
 ```
-2️⃣ Install dependencies\
+2️⃣ Install dependencies
 ```bash
 npm i
 ```
 
 🏃 Running the Project\
-To start the React app in development mode:\
+To start the React app in development mode:
 ```bash
 npm run dev
 ```
