@@ -1,20 +1,22 @@
-import "./app.css";
-import "./navbar.css";
-import "./menu.css";
-import Navbar from "./Navbar";
-import Menu from "./Menu";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import BobaBuilder from "./components/BobaBuilder";
+import Menu from "./components/Menu";
+import CheckoutPage from "./components/CheckoutPage"; // ✅ import it
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div>
-        <Navbar />
+    <Router>
+      <Navbar />
+      <div style={{ marginTop: "140px" }}>
+        <Routes>
+          <Route path="/" element={<BobaBuilder />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/cart" element={<CheckoutPage />} /> {/* ✅ add route */}
+        </Routes>
       </div>
-      <div>
-        <Menu />
-      </div>
-    </>
+    </Router>
   );
-}
+};
 
 export default App;

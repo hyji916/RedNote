@@ -1,7 +1,10 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import RedNoteIcon from "/src/assets/boba_panda.png";
 
-function Navbar() {
+const RedNoteIcon = "/images/boba_panda.png";
+
+const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Top Section: Logo + Contact */}
@@ -16,14 +19,15 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Center Navigation Bar */}
       <div className="navbar-center">
-        <a href="#boba-builder">BOBA BUILDER</a>
-        <a href="#menu">MENU</a>
-        <a href="#cart">CART</a>
-      </div>
+  <Link to="/" className="nav-link">BOBA BUILDER</Link>
+  <Link to="/menu" className="nav-link">MENU</Link>
+  <Link to="/cart" className="nav-link">CART</Link> {/* ✅ links to cart */}
+</div>
+
+
     </nav>
   );
-}
+};
 
 export default Navbar;
